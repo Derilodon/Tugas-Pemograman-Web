@@ -200,6 +200,10 @@ body {
     justify-content: center;
 }
 
+.amba {
+    border-radius: 50%;
+    border-color: #2e7d32;
+}
 
 .fruit-circle {
     width: 330px;

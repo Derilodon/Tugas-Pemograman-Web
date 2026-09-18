@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manfaat Buah-Buahan bagi Kesehatan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2E7D32, #4CAF50);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid-buah {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card-buah {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-buah:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        }
+
+        .wrapper-gambar {
+            width: 100%;
+            height: 220px;
+            background-color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .wrapper-gambar img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .konten-buah {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .konten-buah h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #2E7D32;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .konten-buah ul {
+            list-style-type: none;
+        }
+
+        .konten-buah li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .konten-buah li::before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 4rem;
+            background-color: #2E7D32;
+            color: white;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Manfaat Buah-Buahan bagi Kesehatan</h1>
+        <p>Kandungan nutrisi alami untuk menjaga tubuh tetap bugar dan sehat setiap hari</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-buah">
+
+            <!-- MANGGA -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="mangga.jpg" alt="Mangga Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🥭 Mangga</h2>
+                    <ul>
+                        <li>Meningkatkan sistem kekebalan tubuh (Kaya Vitamin C).</li>
+                        <li>Menjaga kesehatan mata karena mengandung Vitamin A.</li>
+                        <li>Melancarkan pencernaan dengan serat alaminya.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- JERUK -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="jeruk.webp" alt="Jeruk Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🍊 Jeruk</h2>
+                    <ul>
+                        <li>Sumber utama antioksidan dan Vitamin C tubuh.</li>
+                        <li>Membantu menurunkan tekanan darah tinggi.</li>
+                        <li>Menjaga kesehatan kulit agar tetap cerah.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ALPUKAT -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="alpukat.webp" alt="Alpukat Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🥑 Alpukat</h2>
+                    <ul>
+                        <li>Mengandung lemak sehat untuk kesehatan jantung.</li>
+                        <li>Membantu mengontrol kadar gula darah.</li>
+                        <li>Menjaga kelembapan kulit dan rambut.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NANAS -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="nanas.jpg" alt="Nanas Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🍍 Nanas</h2>
+                    <ul>
+                        <li>Mengandung enzim bromelain untuk memecah protein.</li>
+                        <li>Mengurangi peradangan dan nyeri sendi.</li>
+                        <li>Membantu mempercepat penyembuhan luka.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LEMON -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="lemons.jpg" alt="Lemon Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🍋 Lemon</h2>
+                    <ul>
+                        <li>Membantu menjaga keseimbangan pH tubuh dan detoksifikasi alami.</li>
+                        <li>Mendukung penurunan berat badan dengan melancarkan metabolisme.</li>
+                        <li>Mencegah terbentuknya batu ginjal karena kandungan asam sitratnya.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PISANG -->
+            <div class="card-buah">
+                <div class="wrapper-gambar">
+                    <img src="pisangs.webp" alt="Pisang Segar">
+                </div>
+                <div class="konten-buah">
+                    <h2>🍌 Pisang</h2>
+                    <ul>
+                        <li>Sumber energi instan yang baik untuk olahraga.</li>
+                        <li>Kaya akan Kalium untuk menjaga keseimbangan cairan tubuh.</li>
+                        <li>Membantu menjaga kesehatan lambung dari asam berlebih.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Edukasi Kesehatan Buah. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7faf5;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: white;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+/* Menu navigasi */
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+/* Efek ketika mouse diarahkan ke menu */
+
+.nav-menu a:hover {
+    color: #2e7d32;
+}
+
+
+/* Menu yang sedang aktif */
+
+.nav-menu .active {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HEADER MENU
+========================= */
+
+.menu-header {
+    text-align: center;
+
+    padding: 70px 20px 50px;
+}
+
+
+/* Tulisan kecil */
+
+.subtitle {
+    color: #2e7d32;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Judul */
+
+.menu-header h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+
+/* Deskripsi */
+
+.description {
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   PRODUCT CONTAINER
+========================= */
+
+.product-container {
+    width: 84%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding-bottom: 70px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    background-color: white;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+/* Efek hover */
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   FRUIT IMAGE
+========================= */
+
+.fruit-image {
+    width: 130px;
+
+    height: 130px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #f1f8ed;
+
+    border-radius: 50%;
+
+    font-size: 70px;
+}
+
+
+/* =========================
+   PRODUCT NAME
+========================= */
+
+.product-card h2 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+
+/* =========================
+   PRODUCT DESCRIPTION
+========================= */
+
+.product-card p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    min-height: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+    color: #2e7d32;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.price span {
+    font-size: 14px;
+
+    color: #777;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.product-card button {
+    border: none;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.product-card button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Smartphone */
+
+@media (max-width: 550px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+
+    .menu-header {
+        padding: 50px 20px 35px;
+    }
+
+
+    .menu-header h1 {
+        font-size: 32px;
+    }
+
+
+    .product-container {
+        grid-template-columns: 1fr;
+
+        width: 88%;
+    }
+
+}

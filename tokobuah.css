@@ -20,6 +20,8 @@ body {
 
     color: #333;
 
+    line-height: 1.6;
+
     overflow-x: hidden;
 }
 
@@ -91,18 +93,26 @@ body {
 
 
 /* =========================
-   HEADER MENU
+   HEADER
 ========================= */
 
-.menu-header {
+.benefit-header {
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #4caf50
+    );
+
+    color: white;
+
     text-align: center;
 
-    padding: 70px 20px 50px;
+    padding: 65px 20px;
 }
 
 
-.subtitle {
-    color: #2e7d32;
+.benefit-header .subtitle {
+    color: #e8f5e9;
 
     font-size: 14px;
 
@@ -114,179 +124,164 @@ body {
 }
 
 
-.menu-header h1 {
-    font-size: clamp(32px, 5vw, 42px);
+.benefit-header h1 {
+    font-size: clamp(32px, 5vw, 45px);
 
-    margin-bottom: 15px;
-
-    color: #222;
+    margin-bottom: 12px;
 }
 
 
-.description {
-    max-width: 600px;
+.benefit-header p:last-child {
+    max-width: 650px;
 
     margin: auto;
 
-    line-height: 1.7;
-
-    color: #666;
-
     font-size: 16px;
+
+    opacity: 0.95;
 }
 
 
 /* =========================
-   PRODUCT CONTAINER
+   CONTAINER
 ========================= */
 
-.product-container {
-    width: 84%;
+.container {
+    max-width: 1200px;
 
-    max-width: 1100px;
+    margin: 50px auto;
 
-    margin: auto;
+    padding: 0 20px;
+}
 
+
+/* =========================
+   GRID
+========================= */
+
+.grid-buah {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
-
-    padding-bottom: 70px;
 }
 
 
 /* =========================
-   PRODUCT CARD
+   CARD
 ========================= */
 
-.product-card {
+.card-buah {
     background-color: white;
 
-    padding: 30px 25px;
-
-    text-align: center;
-
-    border-radius: 18px;
+    border-radius: 16px;
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 
+    overflow: hidden;
+
     transition: 0.3s;
-}
-
-
-.product-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-
-/* =========================
-   FRUIT IMAGE
-========================= */
-
-.fruit-image {
-    width: 130px;
-
-    height: 130px;
-
-    margin: 0 auto 20px;
 
     display: flex;
 
-    justify-content: center;
+    flex-direction: column;
+}
+
+
+.card-buah:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.wrapper-gambar {
+    width: 100%;
+
+    height: 220px;
+
+    background-color: #fafafa;
+
+    display: flex;
 
     align-items: center;
 
-    background-color: #f1f8ed;
+    justify-content: center;
 
-    border-radius: 50%;
+    padding: 20px;
 
-    font-size: 70px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.wrapper-gambar img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
 }
 
 
 /* =========================
-   PRODUCT NAME
+   CONTENT
 ========================= */
 
-.product-card h2 {
+.konten-buah {
+    padding: 25px;
+
+    flex-grow: 1;
+}
+
+
+.konten-buah h2 {
     font-size: 23px;
 
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 
-    color: #222;
+    color: #2e7d32;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
 }
 
 
-/* =========================
-   DESCRIPTION
-========================= */
+.konten-buah ul {
+    list-style: none;
+}
 
-.product-card p {
-    color: #777;
+
+.konten-buah li {
+    margin-bottom: 12px;
+
+    position: relative;
+
+    padding-left: 23px;
 
     font-size: 14px;
 
-    line-height: 1.6;
-
-    min-height: 45px;
-
-    margin-bottom: 15px;
+    color: #666;
 }
 
 
-/* =========================
-   PRICE
-========================= */
+.konten-buah li::before {
+    content: "✓";
 
-.price {
-    color: #2e7d32;
-
-    font-size: 19px;
+    color: #4caf50;
 
     font-weight: bold;
 
-    margin-bottom: 20px;
-}
+    position: absolute;
 
-
-.price span {
-    font-size: 14px;
-
-    color: #777;
-
-    font-weight: normal;
-}
-
-
-/* =========================
-   BUTTON
-========================= */
-
-.product-card button {
-    border: none;
-
-    background-color: #2e7d32;
-
-    color: white;
-
-    padding: 11px 20px;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-
-    font-size: 14px;
-
-    transition: 0.3s;
-}
-
-
-.product-card button:hover {
-    background-color: #1b5e20;
+    left: 0;
 }
 
 
@@ -298,6 +293,8 @@ footer {
     text-align: center;
 
     padding: 25px;
+
+    margin-top: 60px;
 
     background-color: #2e7d32;
 
@@ -311,9 +308,9 @@ footer {
    TABLET
 ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
-    .product-container {
+    .grid-buah {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -356,39 +353,54 @@ footer {
     }
 
 
-    .menu-header {
-        padding: 50px 20px 35px;
+    .benefit-header {
+        padding: 50px 20px;
     }
 
 
-    .menu-header h1 {
+    .benefit-header h1 {
         font-size: 32px;
     }
 
 
-    .menu-header .description {
-        font-size: 15px;
+    .benefit-header p:last-child {
+        font-size: 14px;
     }
 
 
-    .product-container {
-        grid-template-columns: 1fr;
+    .container {
+        width: 92%;
 
-        width: 90%;
+        margin: 35px auto;
+
+        padding: 0;
+    }
+
+
+    .grid-buah {
+        grid-template-columns: 1fr;
 
         gap: 20px;
     }
 
 
-    .product-card {
-        padding: 28px 20px;
+    .wrapper-gambar {
+        height: 200px;
     }
 
 
-    .product-card button {
-        width: 100%;
+    .konten-buah {
+        padding: 22px;
+    }
 
-        max-width: 220px;
+
+    .konten-buah h2 {
+        font-size: 21px;
+    }
+
+
+    footer {
+        font-size: 13px;
     }
 
 }

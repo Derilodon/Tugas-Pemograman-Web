@@ -7,6 +7,7 @@
 
     <title>Menu | FreshFruit</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,19 +15,53 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<nav class="navbar navbar-expand-lg bg-success">
+    <div class="container">
 
-        <div class="logo">
+        <a class="navbar-brand text-white fw-bold" href="index.html">
             🍊 Toko Buah Mas Amba
+        </a>
+
+        <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="tokobuah.html">
+                        Manfaat
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="menu.html" class="active">Menu</a>
-            <a href="tokobuah.html">Manfaat</a>
-        </div>
-
-    </nav>
+    </div>
+</nav>
 
 
     <!-- ================= HEADER ================= -->
@@ -51,148 +86,205 @@
 
     <!-- ================= PRODUCT ================= -->
 
-    <main class="product-container">
+ <!-- Daftar Produk -->
+<main class="container my-5">
 
+    <div class="row g-4">
 
-        <div class="product-card">
+        <!-- Alpukat -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🥑
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🥑
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Alpukat
+                    </h2>
+
+                    <p class="card-text">
+                        Alpukat Manis.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp25.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Alpukat</h2>
-
-            <p>
-                Alpukat manis dan lembut dengan kualitas terbaik.
-            </p>
-
-            <div class="price">
-                Rp25.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
 
-        <div class="product-card">
+        <!-- Jeruk -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🍊
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🍊
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Jeruk
+                    </h2>
+
+                    <p class="card-text">
+                        Jeruk manis dan segar yang kaya vitamin C.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp18.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Jeruk</h2>
-
-            <p>
-                Jeruk manis dan segar yang kaya vitamin C.
-            </p>
-
-            <div class="price">
-                Rp18.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
 
-        <div class="product-card">
+        <!-- Pisang -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🍌
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🍌
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Pisang
+                    </h2>
+
+                    <p class="card-text">
+                        Pisang matang dengan rasa manis dan lembut.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp15.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Pisang</h2>
-
-            <p>
-                Pisang matang dengan rasa manis dan lembut.
-            </p>
-
-            <div class="price">
-                Rp15.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
 
-        <div class="product-card">
+        <!-- Mangga -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🥭
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🥭
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Mangga
+                    </h2>
+
+                    <p class="card-text">
+                        Mangga segar dengan aroma harum dan rasa manis.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp20.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Mangga</h2>
-
-            <p>
-                Mangga segar dengan aroma harum dan rasa manis.
-            </p>
-
-            <div class="price">
-                Rp20.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
 
-        <div class="product-card">
+        <!-- Nanas -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🍍
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🍍
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Nanas
+                    </h2>
+
+                    <p class="card-text">
+                        Nanas Yang Segar dan Berair.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp12.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Nanas</h2>
-
-            <p>
-                Nanas segar dan berair dengan rasa yang khas.
-            </p>
-
-            <div class="price">
-                Rp12.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
 
-        <div class="product-card">
+        <!-- Lemon -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
 
-            <div class="fruit-image">
-                🍋
+                <div class="card-body text-center">
+
+                    <div class="fs-1 mb-3">
+                        🍋
+                    </div>
+
+                    <h2 class="card-title h4">
+                        Lemon
+                    </h2>
+
+                    <p class="card-text">
+                        Lemon Segar Asam Manis.
+                    </p>
+
+                    <h5 class="text-success fw-bold">
+                        Rp18.000 <small class="text-muted">/ kg</small>
+                    </h5>
+
+                    <button class="btn btn-success mt-2">
+                        Beli Sekarang
+                    </button>
+
+                </div>
+
             </div>
-
-            <h2>Lemon</h2>
-
-            <p>
-                Lemon segar dengan rasa asam dan menyegarkan.
-            </p>
-
-            <div class="price">
-                Rp18.000 <span>/ kg</span>
-            </div>
-
-            <button>
-                Beli Sekarang
-            </button>
-
         </div>
 
+    </div>
 
-    </main>
+</main>
 
 
     <!-- ================= FOOTER ================= -->
@@ -204,7 +296,7 @@
         </p>
 
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
